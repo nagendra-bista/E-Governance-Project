@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Vehicle Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <div class="logo-image"></div>
+            </div>
+            <div class="heading-text">
+               <p>
+                Government of Nepal <br>
+                Ministry of Physical Infrastructure and Transport <br>
+                <h2>Department of Transport Management</h2>
+                Minbhawan, Kathmandu
+            </p>
+            </div>
+            <div class="flag">
+                <div class="flag-image"></div>
+            </div>
+        </nav>
+        <div class="second-header">
+            <div class="search-bar">
+                <input type="search" name="" id="">
+                <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            </div>
+            <div class="menu">
+                <li><a href="#" class="hover">Home</a></li>
+                <li><a href="register.html" class="hover">Register</a></li>
+                <li><a href="#" class="hover">Contact</a></li>
+                <li><a href="#" class="hover">Status</a></li>
+                <li><button class="active">
+                    <a href="#">Login</a>
+                </button></li>
+            </div>
+        </div>
+    </header>
+    <div class="container-body">
+        <div class="form-box">
+            <span class="icon-close">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <h1 id="title">Sign Up</h1>
+            <div id="error"></div>
+            <form action="" id="form">
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" name="" id="username" placeholder="User name">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" name="" id="email" placeholder="Email-id">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="" id="password" placeholder="Password">
+                    </div>
+                    <p>Forget password? <a href="#">Click here!</a></p>
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="signupbtn">Sign Up</button>
+                    <button type="button" class="disable" id="signinbtn">Sign In</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

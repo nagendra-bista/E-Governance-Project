@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Registration</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="heading-text">
+                <p>
+                    Government of Nepal <br>
+                    Ministry of Physical Infrastructure and Transport <br>
+                    <h2>Department of Transport Management</h2>
+                    Minbhawan, Kathmandu
+                </p>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        
+        <form id="regForm" onsubmit="return validateForm()">
+            <!-- Step 1: Vehicle Information -->
+            <div class="tab">
+                <h2>Vehicle Information:</h2>
+                <p><input type="text" placeholder="Brand or manufacturer of the vehicle (e.g., Toyota, Honda)" oninput="this.className = ''" name="make"></p>
+                <p><input type="text" placeholder="Specific model of the vehicle  (e.g., Camry, Civic)" oninput="this.className = ''" name="model"></p>
+                <p><input type="text" placeholder="Type of vehicle (e.g., Sedan, SUV)" oninput="this.className = ''" name="type"></p>
+                <p><input type="text" placeholder="Engine Number" oninput="this.className = ''" name="engine_number"></p>
+                <p><input type="text" placeholder="Chassis Number" oninput="this.className = ''" name="chassis_number"></p>
+                <p><input type="text" placeholder="Year of Manufacture" oninput="this.className = ''" name="year_of_manufacture"></p>
+                <p><input type="text" placeholder="Color" oninput="this.className = ''" name="color"></p>
+                <p><input type="text" placeholder="Fuel Type (e.g., Petrol, Diesel)" oninput="this.className = ''" name="fuel_type"></p>
+            </div>
+
+            <!-- Step 2: Registration Information -->
+            <div class="tab">
+                <h2>Registration Information:</h2>
+                <p><label for="Registration date">Registration Date</label>
+                    <input type="date" placeholder="Registration Date" oninput="this.className = ''" name="registration_date"></p>
+                <p> <label for="Expiry Date">Expiry Date:</label>
+                    <input type="date" placeholder="Expiry Date" oninput="this.className = ''" name="expiry_date"></p>
+                <p><label for="Registration Authority">Registration Authority</label>
+                    <input type="text" placeholder="Registration Authority" oninput="this.className = ''" name="registration_authority"></p>
+                <p><label for="Renewal status">Renewal Status:</label>
+                    <input type="text" placeholder="Renewal Status (e.g., Active, Expired)" oninput="this.className = ''" name="renewal_status"></p>
+            </div>
+
+            <!-- Step 3: Owner Information -->
+            <div class="tab">
+                <h2>Owner Information:</h2>
+                <p><input type="text" placeholder="Full Name" oninput="this.className = ''" name="full_name"></p>
+                <p><input type="text" placeholder="Address" oninput="this.className = ''" name="address"></p>
+                <p><input type="text" placeholder="Contact Number" oninput="this.className = ''" name="contact_number"></p>
+                <p><input type="email" placeholder="Email" oninput="this.className = ''" name="email"></p>
+                <p><input type="text" placeholder="National ID" oninput="this.className = ''" name="national_id"></p>
+            </div>
+
+            <div class="nav-buttons">
+                <button type="submit" id="submitBtn">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>
