@@ -15,6 +15,7 @@ function submitForm(event) {
     var unladenWeight = document.getElementById('unladenWeight').value;
     var ladenWeight = document.getElementById('ladenWeight').value;
     var yearOfMfg = document.getElementById('yearOfMfg').value;
+    var vehicleCategory=document.getElementById('vehicleCategory').value;
     var seatingCapacity = document.getElementById('seatingCapacity').value;
     var annualTax = document.getElementById('annualTax').value;
     var registrationdate = document.getElementById('registrationdate').value;
@@ -39,6 +40,7 @@ function submitForm(event) {
     document.getElementById('cardUnladenWeight').innerText = unladenWeight;
     document.getElementById('cardLadenWeight').innerText = ladenWeight;
     document.getElementById('cardYearOfMfg').innerText = yearOfMfg;
+    document.getElementById('cardCategory').innerText=vehicleCategory;
     document.getElementById('cardRenewal').innerText = renewal_status;
     document.getElementById('cardSeating').innerText = seatingCapacity;
     document.getElementById('cardAssed').innerText = annualTax;
