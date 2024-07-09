@@ -1,16 +1,67 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+ }
+
+body {
+    font-family: Arial, sans-serif;
     background-color: #f1f1f1;
 }
 
 header {
+    position: relative;
     background: #006EAF;
     padding: 10px;
     color: white;
     text-align: center;
 }
+.home-section{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    padding: 7px 14px;
+    border-radius: 10px;
+}
+
+.home-section a{
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 18px;
+    padding: 3px;
+}
+.home-section a:hover{
+    opacity: .7;
+    transition: .5s;
+}
+.home-section i{
+    font-size: 18px;
+}
+.heading-text p{
+    font-size: 14px;
+    line-height: 22px;
+    padding: 10px;
+}
+.heading-text span{
+    font-size: 16px;
+}
+.heading-text h2{
+    font-size: 25px;
+    margin-bottom: 5px;
+}
 
 .container {
+    position: relative;
     background-color: white;
     margin: 50px auto;
     padding: 40px;
@@ -19,8 +70,16 @@ header {
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
+.tab{
+   padding: 20px 10px;
+}
+.tab h2{
+    font-size: 25px;
+    padding: 10px 0;
+    margin-bottom: 7px;
+}
 
-input[type=text], input[type=date], input[type=email] {
+input[type=text], input[type=date], input[type=email],input[type=number] {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -30,7 +89,11 @@ input[type=text], input[type=date], input[type=email] {
     box-sizing: border-box;
 }
 
+
 button {
+    position: absolute;
+    right: 40px;
+    bottom: 10px;
     background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
@@ -50,4 +113,154 @@ button:hover {
 
 .step.finish {
     background-color: #4CAF50;
+}
+
+
+
+.card-background{
+    display: block;
+    max-width: 650px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    font-size: 14px;
+}
+.card {
+    overflow: hidden;
+    max-width: 600px;
+    height: 360px;
+    margin: 20px auto;
+    /* background-color: rgba(250,243,224,0.5);
+    background-image: url(Image/bg.jpg); */
+    background: rgb(238, 206, 119) url(Image/bg.jpg); 
+    
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: overlay;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    font-size: 14px;
+}
+.header{
+    margin-top: 0;
+    margin-left: 15px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    height: 80px;
+    width: 80px;
+}
+.logo-back img{
+    height: 110px;
+    width: 110px;
+}
+.header-text{
+    margin: 0;
+    text-align: center;
+}
+.header-text p{
+    margin-top: 10px;
+    margin-bottom: 0;
+    /* background-color: blue; */
+    color: red;
+    font-size: 14px;
+    line-height: 22px;
+    
+}
+.header-text span{
+    font-size: 18px;
+}
+.header-text h2{
+    font-size: 28px;
+    color: blue;
+}
+.main-info{
+    position: relative;
+    display: block;
+    margin: 22px 0 10px 80px;
+}
+.main-info p{
+    font-size: 13px;
+    margin: 5px;
+    color: rgb(67, 63, 63);
+}
+.main-info .chip-card{
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+.chip-card img{
+    height: 50px;
+    width: 60px;
+}
+.signature-field {
+    position: absolute;
+    width: 80px;
+    right: 80px;
+    bottom: 30px;
+}
+.signature-field img{
+    height: 50px;
+    width: 60px;
+    margin:0 5px;
+    background-size: cover;
+
+}
+ .signature-field::after{
+    content: '';
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 1.5px;
+    /* transform-origin: left; */
+    background:black;
+}
+
+.Back-card .content{
+    margin: 22px 0 10px 40px;
+}
+.Back-card h3{
+    text-transform:uppercase;
+    margin:22px 0 20px 40px;
+    font-size: 20px;
+}
+.Back-card p{
+    margin: 5px 0;
+    color: rgb(67, 63, 63);
+    font-size: 13px;
+}
+
+.Back-card .footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    background-color: rgb(39, 39, 226);
+    width: 100%;
+    color: white;
+    padding: 10px 50px;
+    font-size: 16px;
+}
+.QR-scannar{
+    position: absolute;
+    top: 12%;
+    right: 20%;
+    height: 100px;
+    width: 100px;
+}
+.QR-scannar img{
+    height: 100px;
+    width: 100px;
+    background-position: center;
+    background-size: cover;
 }
